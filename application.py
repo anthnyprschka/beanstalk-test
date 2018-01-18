@@ -35,7 +35,7 @@ def application(environ, start_response):
 
 
                 #Here they just log to confirm that the job as worked
-                logger.info("Received task %s scheduled at %s", environ['HTTP_X_AWS_SQSD_TASKNAME'], environ['HTTP_X_AWS_SQSD_SCHEDULED_AT'])
+                logger.info("This is indeed the new version. Received task %s scheduled at %s", environ['HTTP_X_AWS_SQSD_TASKNAME'], environ['HTTP_X_AWS_SQSD_SCHEDULED_AT'])
 
 
         except (TypeError, ValueError):
